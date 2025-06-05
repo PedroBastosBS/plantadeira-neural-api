@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    IMAGE_TAG: latest
-
 phases:
   pre_build:
     commands:
@@ -15,14 +11,14 @@ phases:
   build:
     commands:
       - echo "Construindo a imagem Docker..."
-      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG .
+      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com:latest .
 
   post_build:
     commands:
       - echo "Enviando imagem para o ECR..."
-      - docker push 509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG
+      - docker push 509399600589.dkr.ecr.us-east-1.amazonaws.com:latest
       - echo "Gerando imagedefinitions.json..."
-      - printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG" > imagedefinitions.json
+      - printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com:latest" > imagedefinitions.json
 
 
 artifacts:
