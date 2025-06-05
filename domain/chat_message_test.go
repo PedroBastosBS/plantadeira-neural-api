@@ -1,7 +1,7 @@
-package entities_test
+package domain_test
 
 import (
-	"plantadeira-neural-api/domain/Entities"
+	"plantadeira-neural-api/domain"
 	"testing"
 	"time"
 
@@ -10,12 +10,12 @@ import (
 )
 
 func TestNewChatMessage_Creation(t *testing.T) {
-	chatMsg := entities.NewChatMessage()
+	chatMsg := domain.NewChatMessage()
 	require.NotNil(t, chatMsg, "NewChatMessage should return a non-nil pointer")
 }
 
 func TestChatMessage_FieldAssignment(t *testing.T) {
-	chatMsg := entities.NewChatMessage()
+	chatMsg := domain.NewChatMessage()
 	id := uuid.New().String()
 	userID := uuid.New().String()
 	conversationID := uuid.New().String()

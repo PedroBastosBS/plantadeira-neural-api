@@ -15,6 +15,7 @@
 package main
 
 import (
+	"github.com/gin-contrib/cors"
 	"log"
 
 	"plantadeira-neural-api/application/services"
@@ -52,6 +53,11 @@ func main() {
 	chatMessageController := controllers.NewChatController(openAiService)
 
 	r := gin.Default()
+	r.Use(cors.New(cors.Config{
+		AllowAllOrigins: true,
+		AllowMethods:    []string{"POST", "GET", "OPTIONS"},
+		AllowHeaders:    []string{"Origin", "Content-Type", "Authorization"},
+	}))
 
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	r.GET("/health", healthController.HealthCheck)

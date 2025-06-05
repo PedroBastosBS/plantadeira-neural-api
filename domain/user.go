@@ -1,4 +1,4 @@
-package entities
+package domain
 
 import (
 	"github.com/asaskevich/govalidator"
@@ -9,7 +9,7 @@ type User struct {
 	ID        string    `json:"id" valid:"uuid"`
 	Name      string    `json:"name" valid:"notnull"`
 	Email     string    `json:"email" valid:"email"`
-	CreatedAt time.Time `json:"created_at" `
+	CreatedAt time.Time `json:"created_at" valid:"-"`
 }
 
 func init() {

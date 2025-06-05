@@ -1,15 +1,15 @@
-package entities_test
+package domain_test
 
 import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
-	"plantadeira-neural-api/domain/entities"
+	"plantadeira-neural-api/domain"
 	"testing"
 	"time"
 )
 
 func TestNewUser_Valid(t *testing.T) {
-	user := entities.NewUser()
+	user := domain.NewUser()
 	user.ID = uuid.New().String()
 	user.Name = "Pedro Bastos"
 	user.Email = "pedro@example.com"
@@ -20,7 +20,7 @@ func TestNewUser_Valid(t *testing.T) {
 }
 
 func TestNewUser_InvalidUUID(t *testing.T) {
-	user := entities.NewUser()
+	user := domain.NewUser()
 	user.ID = "invalid-uuid"
 	user.Name = "Pedro Bastos"
 	user.Email = "pedro@example.com"
@@ -31,7 +31,7 @@ func TestNewUser_InvalidUUID(t *testing.T) {
 }
 
 func TestNewUser_EmptyName(t *testing.T) {
-	user := entities.NewUser()
+	user := domain.NewUser()
 	user.ID = uuid.New().String()
 	user.Name = ""
 	user.Email = "pedro@example.com"
@@ -42,7 +42,7 @@ func TestNewUser_EmptyName(t *testing.T) {
 }
 
 func TestNewUser_InvalidEmail(t *testing.T) {
-	user := entities.NewUser()
+	user := domain.NewUser()
 	user.ID = uuid.New().String()
 	user.Name = "Pedro Bastos"
 	user.Email = "invalid-email"

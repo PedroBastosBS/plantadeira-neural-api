@@ -1,0 +1,67 @@
+{
+  "answer": "Olá! A cultura da soja é afetada por várias doenças, cada uma com seu grau de impacto dependendo das condições específicas de cada região e ano de cultivo. No entanto, uma das doenças mais devastadoras para a soja é a ferrugem asiática (Phakopsora pachyrhizi). Ela é considerada uma das mais preocupantes devido à sua capacidade de causar perdas significativas na produtividade, caso não seja adequadamente manejada.\n\nA ferrugem asiática é favorecida por condições de alta umidade e temperatura amena. Para combater essa doença, é crucial o monitoramento constante das lavouras e a aplicação de fungicidas de maneira preventiva e estratégica, respeitando sempre as boas práticas agrícolas.\n\nSe precisar de mais informações ou tiver outra dúvida, fique à vontade para perguntar!",
+  "conversation_id": "aba3207e-c754-4244-b375-b3125f6f0492",
+  "created_at": 1749086788,
+  "event": "message",
+  "id": "35747724-8318-4523-acb3-335944f424fa",
+  "message_id": "35747724-8318-4523-acb3-335944f424fa",
+  "metadata": {
+    "retriever_resources": [
+      {
+        "content": "Apresentação\r\nO primeiro passo para se realizar um adequado programa de controle de doenças em plantas é a correta identificação \ndas mesmas. Esta publicação é resultado do esforço da equipe de fitopatologia da Embrapa Soja, da Embrapa Trigo \ne de antigos colaboradores que agruparam aqui as principais doenças da cultura da soja, já constatadas no Brasil, \ndescrevendo os sintomas, as condições propícias de desenvolvimento e as medidas de controle para cada uma. \nTanto a apresentação de fotografias, quanto o formato da publicação, visam auxiliar a identificação das doenças a \ncampo, sendo uma ferramenta de trabalho muito útil a agricultores, estudantes e profissionais da área agronômica.\r\nNesta quinta edição foi acrescentada a doença mancha bacteriana marrom, causada pela bactéria Curtobacterium \nflaccumfaciens pv. flaccumfaciens, que apareceu em lavouras do Paraná na safra 2011/2012.\r\nJosé Renato Bouças Farias\r\nChefe-Geral da Embrapa Soja",
+        "data_source_type": "upload_file",
+        "dataset_id": "c0bf0844-0089-4e93-a22f-057b56531251",
+        "dataset_name": "doenca_da_soja.pdf...",
+        "doc_metadata": null,
+        "document_id": "6945680e-f265-42fe-830b-a66d5a70db7c",
+        "document_name": "identificacao_doenca_da_soja.pdf",
+        "position": 1,
+        "retriever_from": "api",
+        "score": 0.56553435,
+        "segment_id": "8bd6097f-039b-4191-aabc-ebb12afe069f"
+      },
+      {
+        "content": "20\r\nMancha olho-de-rã (Cercospora sojina)\r\nA doença pode ocorrer em qualquer estádio da planta, mas é mais \ncomum a partir do florescimento\nAtinge folha, haste, vagem e semente, iniciando como pequenos pontos \nde encharcamento (anasarca), que \nevoluem para manchas com centros \ncastanho-claro na página superior da \nfolha, e cinza, na inferior, e bordos \ncastanho-avermelhados, em ambas \nas páginasEm haste e vagem, as \nlesões têm aspecto de encharcamento \nna fase inicial, evoluindo para manchas circulares, castanho-escuras, \nna vagem, e manchas elípticas ou \nalongadas com centro cinza e bordos \nO fungo é disseminado por meio da \nsemente infectada e dos esporos \nlevados pelo vento e sobrevive em \nrestos de culturaA doença é favorecida por condições de altas umidade \ne temperaturaO patógeno possui \na capacidade de desenvolver novas \nraças",
+        "data_source_type": "upload_file",
+        "dataset_id": "c0bf0844-0089-4e93-a22f-057b56531251",
+        "dataset_name": "doenca_da_soja.pdf...",
+        "doc_metadata": null,
+        "document_id": "6945680e-f265-42fe-830b-a66d5a70db7c",
+        "document_name": "identificacao_doenca_da_soja.pdf",
+        "position": 2,
+        "retriever_from": "api",
+        "score": 0.5532385,
+        "segment_id": "cca253c9-807b-449d-9ca1-e2e35555987b"
+      },
+      {
+        "content": "26\r\nMíldio (Peronospora manshurica)\r\nA doença tem início nas folhas unifolioladas e progride, podendo atingir \ntoda a parte aéreaOs sintomas \niniciais são manchas de 3 a 5 mm, \nverde-claras, que evoluem para cor \namarela na página superior da folha, \ne mais tarde para tecido necrosado\nNo verso da mancha amarelada, \naparecem estruturas de frutificação \ndo patógeno, de aspecto cotonoso \ne de coloração levemente rosada a \ncinzaAs infecções na vagem podem \nresultar em deterioração da semente \nou infecção parcial, com formação de \numa crosta pulverulenta, constituída \nde micélio e esporos, dando uma \nO patógeno é introduzido na lavoura \npor meio de sementes infectadas e \npor esporos disseminados pelo vento.\r\nOcorre em praticamente todas as regiões produtoras de soja do BrasilAs \ncondições climáticas de temperaturas \namenas (20 °C a 22 °C) e umidade \nelevada, principalmente na fase vegetativa, são favoráveis à doençaÀ \nmedida que as folhas envelhecem, \ntornam-se resistentes",
+        "data_source_type": "upload_file",
+        "dataset_id": "c0bf0844-0089-4e93-a22f-057b56531251",
+        "dataset_name": "doenca_da_soja.pdf...",
+        "doc_metadata": null,
+        "document_id": "6945680e-f265-42fe-830b-a66d5a70db7c",
+        "document_name": "identificacao_doenca_da_soja.pdf",
+        "position": 3,
+        "retriever_from": "api",
+        "score": 0.5485029,
+        "segment_id": "8709d19d-f00c-4e45-a259-1a9227b1f869"
+      }
+    ],
+    "usage": {
+      "completion_price": "0.002415",
+      "completion_price_unit": "0.000001",
+      "completion_tokens": 161,
+      "completion_unit_price": "15",
+      "currency": "USD",
+      "latency": 4.2406356586143374,
+      "prompt_price": "0.006375",
+      "prompt_price_unit": "0.000001",
+      "prompt_tokens": 1275,
+      "prompt_unit_price": "5",
+      "total_price": "0.00879",
+      "total_tokens": 1436
+    }
+  },
+  "mode": "chat",
+  "task_id": "23c75c28-8ea1-4046-a9b0-4dd30ccdc142"
+}
