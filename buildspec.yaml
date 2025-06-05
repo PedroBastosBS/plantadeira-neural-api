@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - echo "Construindo a imagem Docker..."
-      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com/devops:latest .
+      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com/devops .
       - docker tag devops:latest 509399600589.dkr.ecr.us-east-1.amazonaws.com/devops:latest
 
   post_build:
