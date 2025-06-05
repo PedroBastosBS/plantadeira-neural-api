@@ -7,7 +7,7 @@ env:
 phases:
   pre_build:
     commands:
-      - echo "Fazendo login no ECR..."
+      - echo "Fazendo login no Amazon ECR..."
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 509399600589.dkr.ecr.us-east-1.amazonaws.com
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:-latest}
@@ -15,15 +15,16 @@ phases:
 
   build:
     commands:
-      - echo "Construindo imagem..."
-      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com/go-api:$IMAGE_TAG .
+      - echo "Construindo a imagem Docker..."
+      - docker build -t 509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG .
 
   post_build:
     commands:
-      - echo "Fazendo push para o ECR..."
-      - docker push 509399600589.dkr.ecr.us-east-1.amazonaws.com/go-api:$IMAGE_TAG
+      - echo "Enviando imagem para o ECR..."
+      - docker push 509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG
       - echo "Gerando imagedefinitions.json..."
-      - printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com/go-api:$IMAGE_TAG" > imagedefinitions.json
+      - >
+        printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG" > imagedefinitions.json
 
 artifacts:
   files:
