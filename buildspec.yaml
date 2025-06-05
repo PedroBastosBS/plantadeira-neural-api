@@ -23,8 +23,8 @@ phases:
       - echo "Enviando imagem para o ECR..."
       - docker push 509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG
       - echo "Gerando imagedefinitions.json..."
-      - >
-        printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG" > imagedefinitions.json
+      - printf '[{"name":"go-api","imageUri":"%s"}]' "509399600589.dkr.ecr.us-east-1.amazonaws.com:$IMAGE_TAG" > imagedefinitions.json
+
 
 artifacts:
   files:
